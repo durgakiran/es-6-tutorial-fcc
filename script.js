@@ -25,6 +25,10 @@ const personalInformation = {
   lastName: 'Israel'
 }
 
-const {firstName, lastName} = personalInformation
+const {firstName, lastName} = personalInformation;
 
-console.log(`${firstName} ${lastName}`)
+console.log(`${firstName} ${lastName}`);
+
+const {firstName1: fn, lastName1: ln} = personalInformation;
+
+console.log(`${fn} ${ln}`);
