@@ -162,4 +162,48 @@ let numArray = [1,2,3,4,5,6]
 console.log(numArray.includes(2)) //returns true if numArray contains 2, not supported by IE
 
 //let & const
+//why let and const?
+
+if(false) {
+  var five = 5;
+}
+ console.log(five) //var variables are hoisted, and hence this console statement never throws error
+
+if(false) {
+  let six = 6;
+}
+
+//console.log(six) //throws error if you uncomment
+
+const seven = 7;
+
+console.log(seven);
+
+seven = 8;//throws error
+
+
+//import & export
+import { data } from './example.js';
+
+/*
+makes code more modular
+*/
+
+let updatedData = data;
+
+console.log(data)
+
+
+//padStart() && padEnd()
+
+let myName = 'kiran'
+console.log(example.padStart(10, 'a')) //aaaaakiran five a's and kiran total char sum up to 10
+
+let myName2 = 'kiran kumar';
+console.log(example.padEnd(10, 'a')) //output: 
+
+
+
+
+
 
