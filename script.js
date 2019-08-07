@@ -89,3 +89,46 @@ let name = 'Kiran'
 for(let char of name) {
   console.log(char)
 }
+
+
+//spread operator
+let example1 = [1,2,3,4,5,6,7,8,9]
+
+let example2 = [...example1]
+
+console.log(example2)
+
+let example3 = {
+  firtName: 'kiran',
+  lastName: 'Kumar'
+}
+
+let example4 = {...example3}
+
+console.log(example4)
+//where do we use them?
+
+/**
+* let's say we need to insert a default name if user does not have a name
+*/
+let defaultName = {
+  name: 'kiran'
+}
+
+let newName = {
+  name: 'N/A','
+}
+/**
+then we can use spread operator
+*/
+newName = {
+  ...newName,
+  ...defaultName
+}
+
+//rest operator
+function add(...nums) {
+  console.log(nums);//outputs array
+}
+
+add(4,5,6,7,12)
