@@ -116,7 +116,7 @@ let defaultName = {
 }
 
 let newName = {
-  name: 'N/A','
+  name: 'N/A',
 }
 /**
 then we can use spread operator
@@ -127,8 +127,19 @@ newName = {
 }
 
 //rest operator
+
+//rest operator converts to array a probable replacement to arguments in function
 function add(...nums) {
   console.log(nums);//outputs array
 }
 
 add(4,5,6,7,12)
+
+
+function add1(...nums) {
+  let total = nums.reduce((x, y) => x + y);
+  
+  console.log(total);
+}
+
+add1(4,5,6,7,12)
