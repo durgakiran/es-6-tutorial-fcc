@@ -200,7 +200,33 @@ let myName = 'kiran'
 console.log(example.padStart(10, 'a')) //aaaaakiran five a's and kiran total char sum up to 10
 
 let myName2 = 'kiran kumar';
-console.log(example.padEnd(10, 'a')) //output: 
+console.log(example.padEnd(10, 'a')) //output: kiran kumar  because kiran kumar accounts for more than 10 letters and hence no a's appended
+
+/*
+similarly in padEnd a's append at the end of the string
+*/
+console.log(example.padStart(1)) //our string is clearly larger than 1 and hence nothing happens in this case
+
+
+
+
+//classes
+import { Animal } from './animal.js';
+
+let cat = new Animal('cat', 'four');
+
+console.log(cat.type)//cat
+console.log(cat.legs)//four
+
+cat.legs = 3;
+
+console.log(cat.legs);//3
+
+console.log(cat.makeNoise); //prints 'Loud Noise'
+
+console.log(Animal.return10);; //access static methods
+
+
 
 
 
