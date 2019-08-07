@@ -143,3 +143,23 @@ function add1(...nums) {
 }
 
 add1(4,5,6,7,12)
+
+//default parameters
+function add2(numArray = []) {
+  let total = 0;
+  numArray.forEach((element) => {
+    total = + element;
+  });
+  console.log(total);
+}
+
+add()
+
+
+//includes
+let numArray = [1,2,3,4,5,6]
+
+console.log(numArray.includes(2)) //returns true if numArray contains 2, not supported by IE
+
+//let & const
+
