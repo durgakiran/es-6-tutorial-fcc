@@ -179,7 +179,7 @@ const seven = 7;
 
 console.log(seven);
 
-seven = 8;//throws error
+//seven = 8;//throws error
 
 
 //import & export
@@ -212,7 +212,9 @@ console.log(example.padStart(1)) //our string is clearly larger than 1 and hence
 
 
 //classes
-import { Animal, Cat } from './animal.js';
+//import { Animal, Cat } from './animal.js';
+let Animal = require('./animal.js');
+let Cat = require('./animal.js');
 
 let cat = new Animal('cat', 'four');
 
