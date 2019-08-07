@@ -60,12 +60,18 @@ function addressMaker(city, state) {
 addressMaker('Austin', 'Texas')
 
 function newAddressMaker(address) {
+  const {city, state} = address;
   const newAddress1 = {
-    city: address.city,
-    state: address.state
+    city,
+    state
   };
   
-  console.log(newAddress1)
+  console.log(`${newAddress1.city} ${newAddress1.state}`)
 }
 
-newAddressMaker({city: Aus})
+newAddressMaker({city: 'Austin', state: 'Texas'})
+
+
+
+//For of Loop
+for 
