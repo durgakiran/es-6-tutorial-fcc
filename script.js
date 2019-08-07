@@ -183,7 +183,8 @@ seven = 8;//throws error
 
 
 //import & export
-import {data} from './example.js';
+//import {data} from "./example.js";
+let data = require("./example.js")
 
 /*
 makes code more modular
@@ -267,6 +268,39 @@ async function getTop100Campers2(){
 }
 
 
+function reolveAfter3Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');  
+    }, 3000)
+  })
+}
 
+
+reolveAfter3Seconds().then((data) => {
+  console.log(data);
+}).catch((error) => {
+  console.log(error)
+})
+
+async function getAsyncData() {
+  const result = await reolveAfter3Seconds();
+  console.log(result);
+}
+
+getAsyncData();
+
+
+//sets
+const exampleSet = new Set([1,1,2,2,2]);
+
+console.log(exampleSet.size);//prints 2
+
+exampleSet.add(5)//appends 5 to example Set
+exampleSet.delete(5)//delets 5 from example Set
+
+console.log(example.has(5))//false
+
+//we can use for each on sets #sets are iterable
 
 
