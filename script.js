@@ -74,4 +74,18 @@ newAddressMaker({city: 'Austin', state: 'Texas'})
 
 
 //For of Loop
-for 
+
+let incomes = [62000, 63000, 75000]
+let total = 0;
+
+for (const income of incomes) {
+  total += income
+}
+
+console.log(total)
+
+let name = 'Kiran'
+
+for(let char of name) {
+  console.log(char)
+}
