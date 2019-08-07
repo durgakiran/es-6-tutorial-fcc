@@ -183,7 +183,7 @@ seven = 8;//throws error
 
 
 //import & export
-import { data } from './example.js';
+import {data} from './example.js';
 
 /*
 makes code more modular
@@ -247,10 +247,24 @@ function addingFun(param1,) {
 const apiUrl = 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime';
 
 function getTop100Campers() {
-  
+  fetch(apiUrl)
+  .then((response) => response.json())
+  .then((json) => {
+    console.log(json[0]);
+  }).catch((error) => {
+    console.log('failed');
+  });
 }
 
 getTop100Campers();
+
+async function getTop100Campers2(){
+  const response = await fetch(apiUrl);
+  const json = await response.json();
+  
+  console.log(json[0]);
+
+}
 
 
 
