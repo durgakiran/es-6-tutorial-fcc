@@ -211,7 +211,7 @@ console.log(example.padStart(1)) //our string is clearly larger than 1 and hence
 
 
 //classes
-import { Animal } from './animal.js';
+import { Animal, Cat } from './animal.js';
 
 let cat = new Animal('cat', 'four');
 
@@ -226,8 +226,31 @@ console.log(cat.makeNoise); //prints 'Loud Noise'
 
 console.log(Animal.return10);; //access static methods
 
+console.log(cat.metaaData); //get metaData getter class
+
+cat = new Cat('Cat', 4);
+
+console.log(cat.metaData);
 
 
+//Trailing Commas
+function addingFun(param1,) {
+  const example = {
+    name: 'kiran',
+  }
+  
+  console.log(example)
+}
+
+
+//promisses, async & await
+const apiUrl = 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime';
+
+function getTop100Campers() {
+  
+}
+
+getTop100Campers();
 
 
 
