@@ -31,4 +31,41 @@ console.log(`${firstName} ${lastName}`);
 
 const {firstName1: fn, lastName1: ln} = personalInformation;
 
-console.log(`${fn} ${ln}`);
+console.log(`${fn} ${ln}`);//why this is not working?
+
+
+
+/**
+Array destructuring
+*/
+let names = ['Dylan', 'Coding God', 'Israel']
+
+let [first] = names
+
+console.log(first)
+
+first = 'kiran'
+
+console.log(names[0])
+
+/**
+Object Literal
+*/
+function addressMaker(city, state) {
+  const newAdress = {city, state}//we don;t have to write {city: city, state: state}
+  
+  console.log(newAdress)
+}
+
+addressMaker('Austin', 'Texas')
+
+function newAddressMaker(address) {
+  const newAddress1 = {
+    city: address.city,
+    state: address.state
+  };
+  
+  console.log(newAddress1)
+}
+
+newAddressMaker({city: Aus})
